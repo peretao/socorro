@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css cutons background</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mypix.js" defer></script>
+</head>
+<body>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <!--BOX SHADOW INTERATIVE-->
+    <div id="action-btn" onclick="clicou()"  onmouseenter="entrar()" onmouseout="sair()" onclick="clicando()">
+        vem aqui com esse mouse gostosao
+    </div>
+    <!--BOX SHADOW INTERATIVE-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--SALTADOR DE LINHAS-->
+    <div id="container"><p class="pagamento">Escolha a forma de pagamento</p>
+    <p class="pagamento"></p>
+         <select type="text" id="myInput" oninput="myFunction()">
+            <option>  </option>
+            <option> pix </option>
+            <option> cupix </option>
+            <option> sua irmã </option>
+            <option> sua mãe </option>
+            <option> sua mãe é a preferencia </option>
+        </select>
+    <p class="pagalogo">Depois de escolher a forma de pagamento <button id="action-btn2" onclick="clicado()">click aqui</button></p>
+</div>
+
+    <script>
+        var a = document.getElementById("action-btn")
+        function clicou() {
+            a.innerText = 'me deve 10 pila bobão🤑🤑'
+            a.style.background = 'green'
+        }
+        function entrar() {
+            a.innerText = 'isso , agora clica em mim zé NAMORALZINHA 🥴'
+            a.style.background = 'blue'
+        }
+        function sair() {
+            a.innerText = 'É MELHOR Q VC JA TENHO CLICADO😡'
+            a.style.background = 'red'
+        }
+    </script>
+</body>
+</html>
